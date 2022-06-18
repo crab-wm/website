@@ -9,9 +9,9 @@
           <img alt="CrabWM logo" src="/images/crab_wm_small.svg" />
         </div>
       </div>
-      <div class="index__container">
+      <ContentContainer>
         <slot />
-      </div>
+      </ContentContainer>
     </div>
   </MainTemplate>
 </template>
@@ -36,13 +36,6 @@
         height: 100%;
       }
     }
-  }
-
-  &__container {
-    margin-top: 6rem;
-    background: $bg-color;
-    padding: 2rem 2rem 2rem 0;
-    width: 100%;
   }
 }
 
@@ -72,3 +65,9 @@
   }
 }
 </style>
+<script>
+import ContentContainer from "./ContentContainer";
+export default {
+  components: { ContentContainer },
+};
+</script>

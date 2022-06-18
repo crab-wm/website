@@ -1,18 +1,20 @@
 <template>
   <div>
     <div class="navbar">
-      <div class="navbar__logo">
-        <img
-          alt="CrabWM logo"
-          class="navbar__logo__big"
-          src="/images/crab_wm_big_2.svg"
-        />
-        <img
-          alt="CrabWM logo"
-          class="navbar__logo__small"
-          src="/images/crab_wm_small.svg"
-        />
-      </div>
+      <NuxtLink to="/">
+        <div class="navbar__logo">
+          <img
+            alt="CrabWM logo"
+            class="navbar__logo__big"
+            src="/images/crab_wm_big_2.svg"
+          />
+          <img
+            alt="CrabWM logo"
+            class="navbar__logo__small"
+            src="/images/crab_wm_small.svg"
+          />
+        </div>
+      </NuxtLink>
       <div class="navbar__links">
         <ContentNavigation v-slot="{ navigation }">
           <NuxtLink
