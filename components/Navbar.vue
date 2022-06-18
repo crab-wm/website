@@ -30,7 +30,7 @@
       <div class="navbar__actions">
         <NuxtLink to="https://github.com/crab-wm">
           <div class="navbar__actions__action">
-            <img alt="GitHub logo" src="/icons/github.svg" />
+            <img alt="GitHub logo" src="/icon/github.svg" />
             <span>GitHub</span>
           </div>
         </NuxtLink>
@@ -38,7 +38,7 @@
           class="navbar__actions__action navbar__actions__action-mobile"
           @click="onHamburgerClick"
         >
-          <img alt="Mobile menu" src="/icons/hamburger.svg" />
+          <img alt="Mobile menu" src="/icon/hamburger.svg" />
         </div>
       </div>
     </div>

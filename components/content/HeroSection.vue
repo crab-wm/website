@@ -8,13 +8,13 @@
       <div class="hero-section__left__actions">
         <NuxtLink :to="mainUrl">
           <button class="hero-section__left__actions__main">
-            <img :alt="mainLabel" :src="`/icons/${mainIcon}.svg`" />
+            <img :alt="mainLabel" :src="`/icon/${mainIcon}.svg`" />
             <span>{{ mainLabel }}</span>
           </button>
         </NuxtLink>
         <NuxtLink :to="secondaryUrl">
           <button class="hero-section__left__actions__secondary">
-            <img :alt="secondaryLabel" :src="`/icons/${secondaryIcon}.svg`" />
+            <img :alt="secondaryLabel" :src="`/icon/${secondaryIcon}.svg`" />
             <span>{{ secondaryLabel }}</span>
           </button>
         </NuxtLink>
