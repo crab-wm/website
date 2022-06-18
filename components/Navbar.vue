@@ -136,11 +136,11 @@ const onHamburgerClick = () =>
 }
 
 .mobile-links {
-  margin-top: 2rem;
   font-size: 1.3rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1rem;
+  padding-left: 4rem;
 
   .router-link-exact-active {
     color: $green;
@@ -193,6 +193,10 @@ const onHamburgerClick = () =>
         display: block;
       }
     }
+  }
+
+  .mobile-links {
+    display: flex;
   }
 }
 
