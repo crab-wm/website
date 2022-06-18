@@ -2,37 +2,72 @@
   <MainTemplate>
     <div class="index">
       <div class="index__content">
-        <slot />
+        <div class="index__content__container">
+          <slot name="hero" />
+        </div>
+        <div class="index__content__image">
+          <img alt="CrabWM logo" src="/images/crab_wm_small.svg" />
+        </div>
       </div>
-      <div class="index__image">
-        <img alt="CrabWM logo" src="/images/crab_wm_small.svg" />
+      <div class="index__container">
+        <slot />
       </div>
     </div>
   </MainTemplate>
 </template>
 
 <style lang="scss">
+@import "styles/variables";
 @import "styles/mixins";
 
 .index {
-  &__image {
-    z-index: -1;
-    position: absolute;
-    right: -4rem;
-    bottom: -12rem;
-    transform: rotateZ(-10deg);
+  padding: 4rem;
 
-    img {
-      width: 100%;
-      height: 100%;
+  &__content {
+    &__image {
+      z-index: -1;
+      position: absolute;
+      right: -4rem;
+      bottom: -6rem;
+
+      img {
+        transform: rotateZ(-10deg);
+        width: 100%;
+        height: 100%;
+      }
     }
+  }
+
+  &__container {
+    margin-top: 6rem;
+    background: $bg-color;
+    padding: 2rem 2rem 2rem 0;
+    width: 100%;
   }
 }
 
 @include mq("large") {
   .index {
-    &__image {
-      opacity: 0.2;
+    &__content {
+      &__image {
+        opacity: 0.2;
+        width: 50%;
+        right: 0;
+        bottom: 5rem;
+      }
+    }
+  }
+}
+
+@include mq("big") {
+  .index {
+    &__content {
+      &__image {
+        opacity: 0.2;
+        width: 50%;
+        right: 0;
+        bottom: 15rem;
+      }
     }
   }
 }

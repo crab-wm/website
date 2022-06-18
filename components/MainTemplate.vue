@@ -5,15 +5,7 @@
     <div class="main-template__content">
       <slot />
     </div>
+
+    <Footer />
   </div>
 </template>
-
-<style lang="scss">
-.main-template {
-  padding: 4rem;
-
-  &__content {
-    margin-top: 11rem;
-  }
-}
-</style>

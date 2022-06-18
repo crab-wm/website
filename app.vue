@@ -18,8 +18,14 @@ a {
   color: inherit;
 }
 
+p > a {
+  color: $green;
+}
+
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background: $bg-color;
+  padding: 0;
+  margin: 0;
 }
 </style>
