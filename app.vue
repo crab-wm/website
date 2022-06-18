@@ -19,6 +19,7 @@ a {
 }
 
 body {
+  overflow: hidden;
   background: $bg-color;
 }
 </style>

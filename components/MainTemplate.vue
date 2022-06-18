@@ -13,7 +13,7 @@
   padding: 4rem;
 
   &__content {
-    margin-top: 7rem;
+    margin-top: 11rem;
   }
 }
 </style>
