@@ -5,7 +5,12 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content"],
   content: {
     navigation: {
-      fields: ['label']
-    }
-  }
+      fields: ["label"],
+    },
+  },
+  nitro: {
+    prerender: {
+      routes: ["/sitemap.xml"],
+    },
+  },
 });
