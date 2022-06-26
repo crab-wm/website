@@ -1,13 +1,11 @@
 <template>
-  <NuxtLink :to="url">
-    <div class="app-block">
-      <div class="app-block__image">
-        <img alt="" :src="`/images/${image}`" />
-      </div>
-      <div class="app-block__content">
-        <h4><slot name="name" /></h4>
-        <p><slot /></p>
-      </div>
+  <NuxtLink class="app-block" :to="url">
+    <div class="app-block__image">
+      <img alt="" :src="`/images/${image}`" />
+    </div>
+    <div class="app-block__content">
+      <h4><slot name="name" /></h4>
+      <p><slot /></p>
     </div>
   </NuxtLink>
 </template>
@@ -28,7 +26,6 @@ defineProps<{
   padding: 2rem;
   display: flex;
   gap: 2rem;
-  width: 100%;
   align-items: center;
 
   &__image {
@@ -51,9 +48,8 @@ defineProps<{
   }
 }
 
-@include mq("big") {
+@include mq("large") {
   .app-block {
-    width: calc(100% - 4rem);
     flex-direction: column;
     align-items: start;
     height: auto;

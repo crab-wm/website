@@ -19,18 +19,19 @@ const apps = (await queryContent("apps").skip(1).find()) as (ParsedContent &
 @import "styles/mixins";
 
 .apps-grid {
-  margin-right: 10rem;
   margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-column-gap: 6rem;
   grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
 }
 
 @include mq("large") {
   .apps-grid {
-    grid-template-columns: calc(100% - 4rem);
+    grid-template-columns: 100%;
     margin-right: 0;
+    width: 100%;
   }
 }
 </style>
