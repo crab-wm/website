@@ -2,7 +2,10 @@
   <div class="footer">
     <div class="footer__title">
       <h1>CrabWM</h1>
-      <p>CrabWM is going to be good. <u>REALLY</u> good.</p>
+      <p>
+        CrabWM is going to be good. <br />
+        <u>REALLY</u> good.
+      </p>
     </div>
     <div class="footer__image">
       <img alt="CrabWM logo" src="/images/crab_wm_small.svg" />
@@ -14,7 +17,8 @@
 @import "styles/variables";
 
 .footer {
-  margin-top: 5rem;
+  width: 100vw;
+  margin: 5rem 0 -4rem -4rem;
   background: $bg-secondary-color;
   padding: 4rem;
   display: flex;
