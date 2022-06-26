@@ -1,13 +1,5 @@
 <template>
-  <MainTemplate>
-    <div class="about-page">
-      <slot />
-    </div>
-  </MainTemplate>
+  <div class="about-page">
+    <slot />
+  </div>
 </template>
-
-<style lang="scss">
-.about-page {
-  padding: 4rem;
-}
-</style>

@@ -1,13 +1,8 @@
 <template>
-  <div class="main-template">
+  <div class="main">
     <Navbar />
 
-    <div
-      :class="[
-        'main-template__content',
-        !!padding ? 'main-template__content-padding' : '',
-      ]"
-    >
+    <div :class="['main__content', !!padding ? 'main__content-padding' : '']">
       <slot />
     </div>
 
@@ -22,7 +17,9 @@ defineProps<{
 </script>
 
 <style lang="scss">
-.main-template {
+.main {
+  padding: 4rem;
+
   &__content-padding {
     padding: 4rem;
   }

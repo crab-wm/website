@@ -1,15 +1,11 @@
 <template>
-  <MainTemplate>
-    <div class="apps-page">
-      <slot />
-    </div>
-  </MainTemplate>
+  <div class="apps-page">
+    <slot />
+  </div>
 </template>
 
 <style lang="scss">
 .apps-page {
-  padding: 4rem;
-
   &__apps {
     display: grid;
   }

@@ -1,19 +1,17 @@
 <template>
-  <MainTemplate>
-    <div class="index">
-      <div class="index__content">
-        <div class="index__content__container">
-          <slot name="hero" />
-        </div>
-        <div class="index__content__image">
-          <img alt="CrabWM logo" src="/images/crab_wm_small.svg" />
-        </div>
+  <div class="index">
+    <div class="index__content">
+      <div class="index__content__container">
+        <slot name="hero" />
       </div>
-      <ContentContainer>
-        <slot />
-      </ContentContainer>
+      <div class="index__content__image">
+        <img alt="CrabWM logo" src="/images/crab_wm_small.svg" />
+      </div>
     </div>
-  </MainTemplate>
+    <ContentContainer>
+      <slot />
+    </ContentContainer>
+  </div>
 </template>
 
 <style lang="scss">
@@ -21,8 +19,6 @@
 @import "styles/mixins";
 
 .index {
-  padding: 4rem;
-
   &__content {
     &__image {
       z-index: -1;
