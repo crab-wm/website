@@ -2,7 +2,10 @@
   <main>
     <ContentDoc>
       <template v-slot:not-found>
-        <NotFound />
+        <NotFoundOrEmpty />
+      </template>
+      <template v-slot:empty>
+        <NotFoundOrEmpty />
       </template>
     </ContentDoc>
   </main>
