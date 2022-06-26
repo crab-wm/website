@@ -1,6 +1,10 @@
 <template>
   <main>
-    <ContentDoc />
+    <ContentDoc>
+      <template v-slot:not-found>
+        <NotFound />
+      </template>
+    </ContentDoc>
   </main>
 </template>
 
